@@ -1,0 +1,6 @@
+{
+  "name": "Simulador de Modelado BI",
+  "description": "Un simulador educativo e interactivo liderado por un docente experto en Inteligencia de Negocios para aprender modelado en Estrella (Star) y Copo de Nieve (Snowflake).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
