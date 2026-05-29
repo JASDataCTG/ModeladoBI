@@ -582,13 +582,25 @@ export function ExerciseOne() {
                           className="bg-white border-2 border-black rounded-none px-2 py-1 text-xs text-slate-800 font-mono font-bold focus:outline-hidden focus:bg-[#fefce8] cursor-pointer flex-1"
                         >
                           <option value="">-- Seleccionar --</option>
-                          <option value="ticket_id">ticket_id / atencion_id</option>
-                          <option value="fecha_id">fecha_id</option>
-                          <option value="producto_id">producto_id</option>
-                          <option value="cliente_id">cliente_id / paciente_id</option>
-                          <option value="sucursal_id">sucursal_id / medico_id</option>
-                          <option value="diagnostico_id">diagnostico_id</option>
-                          <option value="unidades">unidades / duracion_minutos</option>
+                          {currentExercise === 0 ? (
+                            <>
+                              <option value="ticket_id">ticket_id</option>
+                              <option value="fecha_id">fecha_id</option>
+                              <option value="producto_id">producto_id</option>
+                              <option value="cliente_id">cliente_id</option>
+                              <option value="sucursal_id">sucursal_id</option>
+                              <option value="unidades">unidades</option>
+                            </>
+                          ) : (
+                            <>
+                              <option value="atencion_id">atencion_id</option>
+                              <option value="fecha_id">fecha_id</option>
+                              <option value="paciente_id">paciente_id</option>
+                              <option value="medico_id">medico_id</option>
+                              <option value="diagnostico_id">diagnostico_id</option>
+                              <option value="duracion_minutos">duracion_minutos</option>
+                            </>
+                          )}
                         </select>
                       </div>
                     </div>
